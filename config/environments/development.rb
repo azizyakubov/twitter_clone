@@ -54,4 +54,8 @@ Rails.application.configure do
   #Devise default url
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  #Live reload of view files
+  # config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
+  # config.middleware.insert_before Rack::Lock, Rack::LiveReload
+
 end
